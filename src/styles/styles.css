@@ -1,0 +1,137 @@
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 10px;
+}
+
+body{
+  margin: 0px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(237,237,238);
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px gray;
+  margin: 0px;
+  padding: 15px;
+}
+
+.navbar > li{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 70px;
+}
+
+.mainButton{
+  background-color: #1bb76e;
+  color: white;
+}
+
+.button{
+  border: 0px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+  box-shadow: 1px 1px green;
+  display: flex;
+  align-items: center;
+
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.mainButton{
+  background-color: #1bb76e;
+}
+
+.mainButton:hover{
+  box-shadow: 2px 2px green;
+
+}
+
+.secondaryButton{
+  background-color: #66d8f5;
+
+}
+
+.secondaryButton:hover{
+  box-shadow: 2px 2px rgb(119, 229, 233);
+}
+.buscar{
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buscar:focus-within{
+  border: 1px solid blue;
+}
+
+.buscarGenerico:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.buscar > input{
+  outline: none;
+  border: 0px;
+  width: 300px;
+}
+
+.iconoBusqueda:hover{
+  color: blue;
+}
+
+.contenedorImagen{
+  height:300px;
+  width: 400px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.contenedorImagen:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.contenedorImagen > img{
+  object-fit: cover;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.breedCardContainer{
+  display: flex;
+}
+
+.breedCard{
+  margin: 10px;
+  background-color: rgb(78, 78, 90);
+  box-shadow: 5px 10px 5px rgb(231, 231, 231);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-radius: 10px;
+}
+
+
+
+.breedTitle{
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
