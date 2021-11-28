@@ -1,13 +1,18 @@
-import logo from './logo.svg';
 import './styles/styles.css';
 import boderCollie from './media/Border-collie.jpg';
 import rhodesian from './media/Rodesian.jpg';
 import logo1 from './media/cocktail_dog_animal_15960.png';
 
 function App() {
+
+     
+
   return (
     <div className="App">
       <header>
+          <div>
+              Hola mundo esto es un div
+          </div>
           <ul className="navbar">
 
               <li>
@@ -37,25 +42,32 @@ function App() {
           <section>
               <h1>Razas de Perros</h1>
               <ul className="breedCardContainer">
-                  <li className="breedCard">
-                      <div className="contenedorImagen">
-                          <img src={boderCollie} alt="Foto de border Border-collie"/>
-                      </div>
-                      <span className="breedTitle">Border Collie</span>
-                  </li>             
-                  <li className="breedCard">
-                      <div className="contenedorImagen">
-                          <img src={rhodesian} alt="Foto de Rhodesian"/>
-                      </div>
-                      <span className="breedTitle">Rhodesian</span>
-                  </li>
+                  <CardRazasPerros nombreRaza='Border Collie' imagen={boderCollie} />         
+                  <CardRazasPerros nombreRaza='Rhodesian' imagen={rhodesian} />
               </ul>
           </section>
           <section></section>
       </main>
-      <footer></footer>
+      <footer>
+         
+         
+
+      </footer>
     </div>
   );
+}
+
+function CardRazasPerros(props){
+    return(
+        <li className="breedCard">
+            <div className={props.color}>
+                <div className="contenedorImagen">
+                    <img src={props.imagen} alt={props.nombreRaza}/>
+                </div>
+                <span className="breedTitle">{props.nombreRaza}</span>
+            </div>
+        </li>
+    );
 }
 
 export default App;
