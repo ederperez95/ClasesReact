@@ -1,6 +1,6 @@
 import logo1 from 'media/cocktail_dog_animal_15960.png';
 
-function Header(){
+const Header = () =>{
     return (
     <header>
             <ul className="navbar">
@@ -30,4 +30,4 @@ function Header(){
     );
 }
 
-export default Header;
+export default Header; 

@@ -1,5 +1,7 @@
-function RhodesianInfoPage(){
-    return (<div>Esta es la pagina de info del Rhodesian</div>);
+const RhodesianInfoPage = () =>{
+    return (
+        <div>Informacion sobre el Rhodesian</div>
+    );
 }
 
 export default RhodesianInfoPage;

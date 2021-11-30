@@ -143,5 +143,19 @@ body{
   background-color:green;
 }
 
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
+}
+
+.mainContainer > main {
+  height: 100%;
+}
+
+.mainContainer > Footer {
+  background-color: red;
+  padding: 10px;
+}
 
