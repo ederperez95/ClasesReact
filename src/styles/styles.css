@@ -115,11 +115,12 @@ body{
 
 .breedCardContainer{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breedCard{
   margin: 10px;
-  background-color: rgb(78, 78, 90);
+  background-color: rgb(78, 78, 90); 
   box-shadow: 5px 10px 5px rgb(231, 231, 231);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -137,7 +138,7 @@ body{
 
 .backGroundRojo{
   background-color:red;
-}
+} 
 
 .backGroundGreen{
   background-color:green;

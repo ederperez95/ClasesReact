@@ -13,11 +13,11 @@ function Index(){
         <section>
             <h1>Razas de Perros</h1>
             <ul className="breedCardContainer">
-                <CardRazasPerros paginaRaza='/borderCollie' nombreRaza='Border Collie' imagen={boderCollie} />         
+                <CardRazasPerros paginaRaza='/bodercollie' nombreRaza='Border Collie' imagen={boderCollie} />         
                 <CardRazasPerros paginaRaza='/rhodesian' nombreRaza='Rhodesian' imagen={rhodesian} />
             </ul>
         </section>
     );
 }
 
-export default Index;
+export default Index; 

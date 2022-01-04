@@ -1,14 +1,14 @@
 import {Link} from 'react-router-dom';
 
-function CardRazasPerros(props){
+function CardRazasPerros({paginaRaza, color, imagen, nombreRaza}){
     return(
         <li className="breedCard">
-            <Link to={props.paginaRaza}>
-                <div className={props.color}>
+            <Link to={paginaRaza}>
+                <div className={color}>
                     <div className="contenedorImagen">
-                        <img src={props.imagen} alt={props.nombreRaza}/>
+                        <img src={imagen} alt={nombreRaza}/>
                     </div>
-                    <span className="breedTitle">{props.nombreRaza}</span>
+                    <span className="breedTitle">{nombreRaza}</span>
                 </div>
             </Link>
 

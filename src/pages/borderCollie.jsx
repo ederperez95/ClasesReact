@@ -1,9 +1,7 @@
-const BorderCollie = () => {
+const BorderCollieInfoPage = () => {
     return (
-        <div>
-            Informacion sobre el border collie
-        </div>
+        <div>Informacion sobre el border collie</div>
     );
 }
 
-export default BorderCollie;
+export default BorderCollieInfoPage;

@@ -1,13 +1,15 @@
 import 'styles/styles.css';
 import Index from 'pages/index';
+import BorderCollieInfoPage from 'pages/borderCollie';
 import RhodesianInfoPage from 'pages/rhodesian';
+import Layout from 'layouts/Layout';
 import {
     BrowserRouter as Router,
     Routes,
     Route,
   } from "react-router-dom";
-import Layout from 'layouts/Layout';
-import BorderCollie from 'pages/borderCollie';
+
+
 
 
 function App() {
@@ -19,9 +21,9 @@ function App() {
           <Router>
             <Layout>
               <Routes>
-                <Route path='/boderCollie' element={<BorderCollie />} exact/>
-                <Route path='/rhodesian' element={<RhodesianInfoPage />} exact/>   
-                <Route path='/' element={<Index />} exact/>              
+                <Route path='/bodercollie' element={<BorderCollieInfoPage/>} exact/>
+                <Route path='/rhodesian' element={<RhodesianInfoPage/>} exact/>   
+                <Route path='/' element={<Index/>} exact/>              
               </Routes>
             </Layout>
           </Router>  
